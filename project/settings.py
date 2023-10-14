@@ -1,3 +1,5 @@
+# flake8: noqa
+
 """
 Django settings for project project.
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-*f*%kd440r7f!ie7)xh&!12!k+#6m0=u!h2mj8&7t5vga8&@l-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: list[str] = []
 
 
 # Application definition
