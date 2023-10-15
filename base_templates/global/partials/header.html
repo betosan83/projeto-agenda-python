@@ -1,0 +1,25 @@
+<header class="header">
+    <h1 class="header-heading">
+      <a href="{% url "contact:index" %}" class="header-link">
+        Agenda
+      </a>
+    </h1>
+    <nav class="menu">
+      <ul class="menu-list">
+        <a href="" class="menu-link">
+          Link
+        </a>
+      </ul>
+    </nav>
+
+    <dev class="search">
+      <form action="{% url 'contact:search' %}"  method="GET">
+        <input 
+            type="search" 
+            class="search-input" 
+            placeholder="Busca" 
+            id="search" 
+            name="q">
+      </form>
+    </dev>
+  </header>
