@@ -61,7 +61,7 @@ def search(request):
             Q(email__icontains=search_value)
         )\
         .order_by('-id')
-    
+
     paginator = Paginator(contacts, 10)  # Show 25 contacts per page.
 
     page_number = request.GET.get("page")
